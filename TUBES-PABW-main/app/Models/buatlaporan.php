@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
+
+class BuatLaporan extends Model
+{
+    protected $table = 'buatlaporan';
+
+    protected $fillable = [
+        'user_id',   // ✅ WAJIB
+        'nama',
+        'email',
+        'notelp',
+        'date',
+        'time',
+        'polres',
+        'alamat',
+        'foto',
+        'deskripsi',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+}
