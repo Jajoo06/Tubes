@@ -81,6 +81,7 @@ body {
     transition: background 0.3s;
 }
 
+
 .nav-link:hover,
 .nav-item.active .nav-link,
 .logout-btn:hover {

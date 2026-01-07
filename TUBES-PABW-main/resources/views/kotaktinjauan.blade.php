@@ -14,7 +14,6 @@
 
 <body>
     <header>
-        <!-- Sidebar Navigation -->
         <div class="sidebar">
             <div class="sidebar-header">
                 <div class="logo-container">
@@ -59,10 +58,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <form method="POST" action="{{ route('logout') }}">
+                        <form method="POST" action="{{ route('logout') }}" >
                             @csrf
-                            <button type="submit" class="logout-btn">
-                                <i class='bx bx-log-out'></i>
+                            <button type="submit" class="nav-link logout-btn">
+                                <i class='bx  bx-arrow-out-right-square-half'></i> 
                                 <span>Logout</span>
                             </button>
                         </form>
